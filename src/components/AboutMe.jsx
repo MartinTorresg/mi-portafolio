@@ -1,26 +1,46 @@
 import React from 'react';
-import fotoPerfil from '../assets/imagen-perfil.jpeg';
+import { FaPlane, FaGamepad, FaGuitar } from 'react-icons/fa';
+import illustration from '../assets/web-developer2.svg';
+import Skill from './Skill';
 
 const AboutMe = () => {
   return (
-    <div id="about" className="container mx-auto py-10 px-4">
-      <h2 className="text-3xl font-bold text-center">Sobre Mí</h2>
-      <div className="flex flex-col md:flex-row items-center mt-6">
-        <img src={fotoPerfil} alt="Martin Torres" className="w-48 h-48 rounded-full mx-auto md:mx-0" />
-        <div className="md:ml-6 mt-4 md:mt-0 text-justify">
-          <p>
-            Soy Ingeniero Informático titulado en 2024 por Duoc UC, actualmente trabajando como Desarrollador Full-Stack.
-            Tengo experiencia en el desarrollo de soluciones tecnológicas utilizando React, Node.js, HTML, CSS y SQL,
-            tanto en proyectos empresariales como freelance.
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-10 mt-16">
+      <div className="flex flex-col md:flex-row items-center md:space-x-10 space-y-8 md:space-y-0">
+        
+        <div className="md:w-1/3">
+          <img src={illustration} alt="Developer Illustration" className="w-full max-w-sm mx-auto" />
+        </div>
+
+        <div className="md:w-2/3 space-y-4">
+          <h1 className="text-4xl font-bold text-white">Know Who I'M</h1>
+          <p className="text-lg text-gray-400">
+            Hi everyone, I am <span className="text-primary font-bold">Martin Torres</span> from <span className="text-primary font-bold">Viña Del Mar, Chile</span>.
           </p>
-          <p className="mt-4">
-            Me apasiona la tecnología y la posibilidad de crear soluciones eficientes y escalables que mejoren la vida de
-            las personas. Soy proactivo, curioso y disfruto trabajar en equipo, siempre buscando aplicar buenas prácticas
-            de desarrollo.
+          <p className="text-lg text-gray-400">
+            I am currently seeking my next career opportunity as a software developer.
           </p>
+          <p className="text-lg text-gray-400">
+            Apart from coding, some other activities that I love to do!
+          </p>
+          <div className="flex flex-col items-center space-y-2">
+            <div className="flex items-center space-x-2 text-primary">
+              <FaPlane /> <span>Travelling</span>
+            </div>
+            <div className="flex items-center space-x-2 text-primary">
+              <FaGamepad /> <span>Gaming</span>
+            </div>
+            <div className="flex items-center space-x-2 text-primary">
+              <FaGuitar /> <span>Playing Guitar</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div className="mt-16 w-full">
+        <Skill />
+      </div>
+    </section>
   );
 };
 

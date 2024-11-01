@@ -5,35 +5,41 @@ import pizzeriaImg from '../assets/pizzeria.png';
 
 const Projects = () => {
   return (
-    <motion.div
+    <motion.section
       id="projects"
-      className="container mx-auto py-10 px-4"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      className="min-h-screen flex flex-col items-center text-center px-4 py-10 mt-16"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <h2 className="text-3xl font-bold text-center">Proyectos</h2>
-      <div className="mt-6 space-y-6">
-        <div className="bg-gray-100 p-4 rounded shadow flex flex-col md:flex-row">
-          <img src={peluqueriaImg} alt="Sistema de Gestión de Peluquería" className="w-full md:w-1/3 rounded mb-4 md:mb-0 md:mr-4" />
-          <div>
-            <h3 className="text-2xl font-semibold">Sistema de Gestión de Peluquería</h3>
-            <p className="mt-2">Una aplicación para la gestión interna de una peluquería, desarrollada con Electron, React y TailwindCSS.</p>
-            <a href="https://github.com/MartinTorresg/peluqueria" className="text-blue-500 mt-2 inline-block">Ver en GitHub</a>
-          </div>
+      <h2 className="text-5xl font-bold text-purple-500 mb-4">My Recent Works</h2>
+      <p className="text-lg text-gray-300 mb-12">Here are a few projects I've worked on recently.</p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-purple-500">
+          <img src={peluqueriaImg} alt="Hair Salon Management System" className="rounded mb-4" />
+          <h3 className="text-2xl font-semibold text-white mb-2">Hair Salon Management System</h3>
+          <p className="text-gray-400 mb-4">
+            A comprehensive desktop application for managing a hair salon's daily operations, including appointments, inventory, sales, and customer information. Built with <span className="text-primary font-bold">Electron</span> and <span className="text-primary font-bold">React</span>, styled using <span className="text-primary font-bold">Tailwind CSS</span>. This application includes a user-friendly dashboard that provides analytics on sales and customer trends, enabling salon managers to make data-driven decisions and optimize resources.
+          </p>
+          <a href="https://github.com/MartinTorresg/peluqueria" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition">
+            GitHub
+          </a>
         </div>
 
-        <div className="bg-gray-100 p-4 rounded shadow flex flex-col md:flex-row">
-          <img src={pizzeriaImg} alt="Sistema de Gestión de Pizzería" className="w-full md:w-1/3 rounded mb-4 md:mb-0 md:mr-4" />
-          <div>
-            <h3 className="text-2xl font-semibold">Sistema de Gestión de Pizzería</h3>
-            <p className="mt-2">Aplicación de escritorio para la gestión de una pizzería, construida con Electron y otras tecnologías web.</p>
-            <a href="https://github.com/MartinTorresg/pizzeria-electron" className="text-blue-500 mt-2 inline-block">Ver en GitHub</a>
-          </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-purple-500">
+          <img src={pizzeriaImg} alt="Pizzeria Management System" className="rounded mb-4" />
+          <h3 className="text-2xl font-semibold text-white mb-2">Pizzeria Management System</h3>
+          <p className="text-gray-400 mb-4">
+            A robust desktop solution for managing a pizzeria's workflow, covering order management, inventory tracking, and sales reporting. Developed with <span className="text-primary font-bold">Electron</span> and enhanced with <span className="text-primary font-bold">React</span> and <span className="text-primary font-bold">Tailwind CSS</span> for a seamless user experience. The application includes an interactive dashboard to monitor order volume, analyze peak times, and track inventory usage, helping managers maintain stock levels and improve operational efficiency.
+          </p>
+          <a href="https://github.com/MartinTorresg/pizzeria-electron" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition">
+            GitHub
+          </a>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
-}
+};
 
 export default Projects;
