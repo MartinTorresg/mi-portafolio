@@ -20,7 +20,7 @@ const Contact = () => {
           <p className="mt-2">GitHub</p>
         </a>
       </div>
-      <a href="/CV_Martin_Torres_ESP.pdf" download className="bg-blue-500 text-white px-4 py-2 rounded">
+      <a href="CVMartinTorresESP.pdf" download className="bg-blue-500 text-white px-4 py-2 rounded">
         Descargar CV
       </a>
     </div>
