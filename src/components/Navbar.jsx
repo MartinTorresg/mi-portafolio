@@ -14,16 +14,16 @@ const Navbar = () => {
         <div className="w-24"></div>
 
         <div className="flex space-x-6">
-          <a href="/#/" className="flex items-center space-x-1 hover:text-purple-400">
+          <a href="#/" className="flex items-center space-x-1 hover:text-purple-400">
             <FaHome /> <span>Home</span>
           </a>
-          <a href="/#/about" className="flex items-center space-x-1 hover:text-purple-400">
+          <a href="#/about" className="flex items-center space-x-1 hover:text-purple-400">
             <FaUser /> <span>About Me</span>
           </a>
-          <a href="/#/projects" className="flex items-center space-x-1 hover:text-purple-400">
+          <a href="#/projects" className="flex items-center space-x-1 hover:text-purple-400">
             <FaBriefcase /> <span>Projects</span>
           </a>
-          <a href="/#/resume" className="flex items-center space-x-1 hover:text-purple-400">
+          <a href="#/resume" className="flex items-center space-x-1 hover:text-purple-400">
             <FaFileAlt /> <span>Resume</span>
           </a>
         </div>
