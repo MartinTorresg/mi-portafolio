@@ -9,11 +9,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-10 space-y-16 mt-16"
-    >
+    <section id="home" className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-10 space-y-16 mt-16">
+      {/* Sección de Presentación */}
       <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10 space-y-8 md:space-y-0">
+        
         <div className="md:w-1/2">
           <img src={illustration} alt="Developer Illustration" className="w-full max-w-sm mx-auto" />
         </div>
@@ -45,6 +44,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Sección de Contacto */}
       <div id="contact" className="w-full py-16 text-center mt-16">
         <h2 className="text-4xl font-bold text-white mb-6">Get in Touch</h2>
         <p className="text-lg text-gray-300 mb-8">
